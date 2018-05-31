@@ -25,7 +25,7 @@ npm install nodemon -g
 // Creating a json object and sending to the BROW-ser; pretty cool huh?
 var testUsers = [
 	{
-		username: "Tedster827",
+		username: "Jade022",
 		password: "Super Secret"
 	},
 	{
