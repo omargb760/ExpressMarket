@@ -1,0 +1,41 @@
+Installing Express/Body-Parser
+
+Within the directory:
+(NPM - Node Package Manager)
+npm init
+
+package.json will appear
+- add dependencies
+
+// Middleware Example
+var logger = function(req,res,next){
+	console.log("In log function logging");
+	// Run the move pick of middleware
+	next();
+};
+
+// run middleware (from above code)
+app.use(logger);
+
+Installing nodemon (globally) - nodemon is so that the js that we edit will become live edits 
+// (i.e. the server won't have to restart for js code changes to take affect)
+npm install nodemon -g
+
+
+// Creating a json object and sending to the BROW-ser; pretty cool huh?
+var testUsers = [
+	{
+		username: "Tedster827",
+		password: "Super Secret"
+	},
+	{
+		username: "Omar026",
+		password: "Omar's Super Secret"
+	}
+]
+
+// If you place the get before the logger, the logger will not run
+app.get('/', function(req,res){
+	// send() sends a string etc to the client
+	res.json(testUsers);
+});

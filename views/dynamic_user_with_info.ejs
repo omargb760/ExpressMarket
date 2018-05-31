@@ -1,0 +1,88 @@
+<% include partials/headerLogin %>
+<div class= "container-fluid">
+  <div id="dynamic_background"> <!--This background will resize with viewport-->
+    <img class="S_stretch" src="./img/Dynamic_flower.jpg" alt="Black background with a flower">
+  </div>
+
+        <!-- This text only gets displayed on browser windows large and x-large  WIP? -Teddy -->
+
+        <!-- This text only gets displayed on browser windows large and x-large -->
+        <!-- This box is for the article input-->
+      <!--  <div class="col-lg-4 d-none d-lg-block"> -->
+    <div class= "S_left">
+      <br>
+      <br>
+          <h5 class= "text-white text-left" >
+                        <!--&= Out & In from and to startWebServer.js-->
+                        <%= dashboardInfo.article0Name%> Article Evaluation:
+          </h5>
+          <br>
+                <p class="text-white">
+                  <%= dashboardInfo.article0Eval%> %  Positivity
+                  <br>
+                  <br>
+                  From: <br>"<%= dashboardInfo.article0Source%>"
+                  <br>
+                  <br>
+                  Date Recieved: <br><%= dashboardInfo.article0Date%>
+                  <br>
+                  <br>
+                  Suggestion: <br> <%= dashboardInfo.article0Option%>
+                </p>
+
+        <!-- </div> -->
+        <!-- END article input-->
+
+        <!-- This text only gets displayed on browser windows large and x-large -->
+        <!-- This box is for adding a stock-->
+      <!--  <div class="col-lg-4 d-none d-lg-block"> -->
+
+                <!-- <form method="POST" action="/">
+                    <br>
+                    <input type="text" placeholder="Please Enter Stock to Add" name="stockAdd">
+                    <br>
+                    <input type="submit" value="StockAddSent">
+                </form> -->
+
+      <!--   </div> -->
+        <!-- END Stock add-->
+
+        <!-- This text only gets displayed on browser windows large and x-large -->
+        <!-- This box is for the article input-->
+      <!--  <div class="col-lg-4 d-none d-lg-block"> -->
+<!--
+                <form method="POST" action="/">
+                    <br>
+                    <input type="text" placeholder="Please Enter a stock to watch" name="stockWatch">
+                    <br>
+                    <input type="submit" value="stockWatchSent">
+                </form> -->
+
+      <!--  </div> -->
+        <!-- END stock to watch -->
+      </div>
+
+      <div class= "S_center">
+        <h3 class= "text-white text-center">Express Predictors</h3>
+        <br>
+        <br>
+        <br>
+        <blockquote>
+            <p class= "text-muted small text-center">     "The most important quality for an investor is temperament, not intellect.
+              You need a temperament that neither derives great pleasure from being with the crowd or against the crowd." </p>
+            <footer class= "text-muted small text-right">-Warren Buffett</footer>
+        </blockquote>
+        <br>
+        <br>
+        <br>
+          <blockquote>
+              <p class= "text-muted small text-center">     "In my whole life, I have known no wise people who didn’t read all the time – none, zero. " </p>
+              <footer class= "text-muted small text-right">-Charlie Munger</footer>
+          </blockquote>
+        <br>
+      </div>
+      <div class= "S_right">
+
+      </div>
+</div>
+<% include partials/footer %>

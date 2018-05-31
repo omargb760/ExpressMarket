@@ -1,0 +1,62 @@
+<% include partials/header %>
+<!----------------------Beginning Index Page Express Predictors------------------------------------------------>
+<div class="container-fluid">
+    <section id="showcase" class="row">
+        <!--first part of Main content of site -->
+        <div class="container col-lg-8">
+            <!-- Container deals with spacing -->
+            <div>
+                <!-- This text only gets displayed on browser windows large and x-large -->
+                <h1 class="d-none d-lg-block">Express Predictors</h1>
+                <p class="d-none d-lg-block">
+                    Here at Express Market, we offer sound advice your stocks. So you never lose money. Buy or sell, that's as simple as it should be.
+                    <br>
+                    <br>
+                    <br> Most Recent Users
+                    <!--&= Out & In from and to startWebServer.js-->
+                    <!-- <% recentUsers.forEach(function(recentUsers) { %>
+                        <li> User:
+                            <%= recentUsers.userName %> Most Viewed Stock:
+                            <%= recentUsers.mostViewedStock%>
+                        </li>
+                    <% }) %> -->
+                </p>
+            </div>
+
+            <div>
+                <!-- This text only gets displayed on browser windows Medium and smaller -->
+                <h2 class="d-lg-none">Express Predictors</h2>
+                <p class="d-lg-none">
+                    Most Recent Users
+                    <!--&= Out & In from and to startWebServer.js-->
+                    <% recentUsers.forEach(function(recentUsers) { %>
+                        <li> User:
+                            <%= recentUsers.userName %> Most Viewed Stock:
+                                <%= recentUsers.mostViewedStock%>
+                        </li>
+                        <% }) %>
+                </p>
+            </div>
+
+        </div>
+        <!-- This text only gets displayed on browser windows large and x-large -->
+        <div class="col-lg-4 d-none d-lg-block">
+            <div class="S_top S_form_styling">
+                <form method="POST" action="/">
+                    <br>
+                    <input type="text" placeholder="Username" name="username">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="password" placeholder="Password" name="password">
+                    <br>
+                    <br>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+
+    </section>
+</div>
+<!----------------------Ending Section of Express Predictors------------------------------------------------>
+<% include partials/footer %>

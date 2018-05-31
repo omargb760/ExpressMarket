@@ -1,0 +1,21 @@
+{
+  "name": "expressplayground",
+  "version": "1.0.0",
+  "description": "Creating a learning environment for express and body-parser",
+  "main": "startWebServer.js",
+  "scripts": {
+    "test": "Node startWebServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tedster827/TykhesMarket/tree/ExpressPlayground"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "*",
+    "express": "*",
+    "taffy": "*"
+  },
+  "author": "Tyhke's Market Team",
+  "license": "MIT"
+}
